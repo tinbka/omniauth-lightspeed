@@ -1,4 +1,5 @@
 require "omniauth/lightspeed/version"
+require "omniauth/lightspeed/strategy"
 
 module OmniAuth
   module Lightspeed
