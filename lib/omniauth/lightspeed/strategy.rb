@@ -18,6 +18,10 @@ module OmniAuth
       info do
          { :name => raw_info[:name] }
        end
+       
+      def callback_url
+        full_host + script_name + callback_path
+      end
 
       def build_access_token
         access_token = super
